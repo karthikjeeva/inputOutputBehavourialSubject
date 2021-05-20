@@ -14,7 +14,7 @@ export class ParentComponent  {
  constructor (private ds:DataSourceService) {}
  
  changeValue() {
-  this.ds.updatedDataSelection('chickhen');
+  this.ds.updatedDataSelection('chicken');
   this.ds.data.subscribe(item => {
     this.currentItem = item
   })
