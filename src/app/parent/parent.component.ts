@@ -10,6 +10,8 @@ import { DataSourceService } from '../data-source.service';
 export class ParentComponent  {
  currentItem = "Hot Soup";
  items = [];
+ val = "";
+ simplestr = "kar";
 
  constructor (private ds:DataSourceService) {}
  

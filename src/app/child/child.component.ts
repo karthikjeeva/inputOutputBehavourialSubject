@@ -7,6 +7,8 @@ import { Component, Input, OnChanges, SimpleChanges, Output, EventEmitter } from
 })
 export class ChildComponent implements OnChanges {
   @Input() item = '';
+  //@Input() name = '';
+  @Input('val') name = '';
   @Output() talkToParent = new EventEmitter<string>();
 
   ngOnChanges(changes: SimpleChanges): void {

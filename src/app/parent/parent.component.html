@@ -1,5 +1,6 @@
 <div class="toChild">
-    <app-child [item]="currentItem"></app-child> <br/>
+    <!-- <app-child [item]="currentItem" [name]="simplestr"></app-child> <br/> -->
+    <app-child [item]="currentItem" [val]="simplestr"></app-child> <br/>
     <button (click)="changeValue()">Change Item</button> 
 </div>
 
